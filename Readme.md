@@ -1,6 +1,7 @@
 # ##########################################################
 #
-# VxWorks 7 AWS IoT Device SDK For C User Guide
+# VxWorks® 7 Client for AWS IoT Device SDK
+# User Guide
 #
 # ##########################################################
 
@@ -151,18 +152,8 @@ information dashboard at the AWS IoT website.
 * For how to use the C SDK, view link here:
     'http://docs.aws.amazon.com/iot/latest/developerguide/iot-device-sdk-c.html'
 
-### Support Disclaimer  
+### Legal Notices
 
-* Disclaimer of Warranty / No Support:   
+All product names, logos, and brands are property of their respective owners. All company, product and service names used in this software are for identification purposes only. Wind River and VxWorks are a registered trademarks of Wind River Systems. Amazon and AWS are registered trademarks of the Amazon Corporation.
 
-    Wind River does not provide support and maintenance services for this software,  
-    under Wind River’s standard Software Support and Maintenance Agreement or  
-    otherwise. Unless required by applicable law, Wind River provides the  
-    software (and each contributor provides its contribution) on an “AS IS”  
-    BASIS, WITHOUT WARRANTIES OF ANY KIND, either express or implied,  
-    including, without limitation, any warranties of TITLE, NONINFRINGEMENT,  
-    MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely  
-    responsible for determining the appropriateness of using or redistributing  
-    the software and assume ay risks associated with your exercise of  
-    permissions under the license.  
-
+Disclaimer of Warranty / No Support: Wind River does not provide support and maintenance services for this software, under Wind River’s standard Software Support and Maintenance Agreement or otherwise. Unless required by applicable law, Wind River provides the software (and each contributor provides its contribution) on an “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, either express or implied, including, without limitation, any warranties of TITLE, NONINFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the software and assume ay risks associated with your exercise of permissions under the license.
