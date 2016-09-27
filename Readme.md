@@ -144,7 +144,7 @@ The sample can also be run in VxWorks user space (for example, in a VxWorks RTP)
 
   **Note:** Before running the RTP sample to connect to the AWS cloud, you must set the correct VxWorks system time. You can use the on board RTC, configure the NTP or other methods to set the system time.
 
-### Viewing the Device Information on the AWS IoT Dashboard
+## Viewing the Device Information on the AWS IoT Dashboard
 
 You can run your device image with the AWS IoT SDK and then view the device
 information dashboard at the AWS IoT website.
