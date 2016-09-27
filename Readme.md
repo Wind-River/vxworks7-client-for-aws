@@ -110,7 +110,7 @@ Create the VxWorks 7 VxWorks source build (VSB) and VxWorks image project (VIP) 
 
 ## Creating the VSB and VIP Using Workbench
 
-# Create the VSB
+### Create the VSB
 
 1.  Open Workbench 4
 2.  Select the target operating system.
@@ -122,7 +122,7 @@ Create the VxWorks 7 VxWorks source build (VSB) and VxWorks image project (VIP) 
 8.  Click **File > Save**.
 9.  Right-click *vsb_fsl_imx6* in the *Project Explorer* and then click **Build Project**.
 
-# Create the VIP
+### Create the VIP
 
 1.  After you have built the VSB, click **File > New > Wind River Workbench Project....**
 2.  Set **Build type** to **VxWorks Image Project**, click **Next**.
@@ -136,7 +136,7 @@ Create the VxWorks 7 VxWorks source build (VSB) and VxWorks image project (VIP) 
 10. Click **Add external** to add the certificate files in *$WIND_BASE/pkgs/net/cloud/aws/src/iot-embeddedc/certs/* to the ROMFS project 
 11. Right-click *vip_fsl_imx6* in the **Project Explorer** then click **Build Project**.
 
-## Creating and Running the RTP 
+### Creating and Running the RTP 
 
 The sample can also be run in VxWorks user space (for example, in a VxWorks RTP). The sample RTP file *subscribe_publish_sample.vxe* is generated in **${VSB_DIR}/usr/root/diab/bin** or **${VSB_DIR}/usr/root/gnu/bin** when building the VSB. Add the **INCLUDE_RTP** component in the VIP project, add the *subscribe_publish_sample.vxe* file to the RomFS project and build the VIP. When VxWorks is running, you can load and run the sample RTP in the VxWorks shell.
         
