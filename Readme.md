@@ -17,7 +17,7 @@ Before installing the SDK prepare the development environment.
 3. Ensure the VxWorks 7 DVD is installed.  
 4. Ensure the **AWS IoT** device SDK for C source code is available from the following location:
 
-        <https://github.com/aws/aws-iot-device-sdk-embedded-C.git>
+        [link](https://github.com/aws/aws-iot-device-sdk-embedded-C.git)
 
 ## Installing the SDK
 
