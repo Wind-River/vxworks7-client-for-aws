@@ -1,6 +1,6 @@
 # ##########################################################
 #
-# VxWorks® 7 Client for AWS IoT Device SDK
+# VxWorks® 7 Client for AWS®  IoT Device SDK
 # User Guide
 #
 # ##########################################################
