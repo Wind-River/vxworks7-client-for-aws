@@ -1,4 +1,4 @@
-Wind River® VxWorks7® Client for AWS® IoT Project 
+Wind River® VxWorks7® Client for AWS IoT Project 
 
 		Third Party Notices 
 ----------------------------------------------------------------- 
