@@ -8,6 +8,10 @@
 
 This README page provides a quick summary of how to build and run the AWS IoT device SDK for C that will reside in VxWorks 7 on your device. The AWS IoT device SDK for C is an embedded C client library for interacting with the AWS Internet of Things (IoT) Platform. This client library is not provided in VxWorks 7 RPM packages or on the VxWorks 7 product DVDs . You will need to manually install this library on VxWorks 7.
 
+### Project License
+
+The license for this project is the BSD-3-Clause. Text of BSD-3-Clause license and other applicable license notices can be found in the LICENSE_NOTICES.txt file in the top level directory. Each source files should include a license notice that designates the licensing terms for the respective file. 
+
 ### Prerequisite
 
 Before install the AWS IoT device SDK for C in VxWorks 7, please prepare your development environment:  
