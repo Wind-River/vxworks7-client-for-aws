@@ -13,6 +13,8 @@ This document provides a quick summary of how to build and run the **Amazon Web 
 
 The license for this project is the BSD-3-Clause. Text of BSD-3-Clause license and other applicable license notices can be found in the LICENSE_NOTICES.txt file in the top level directory. Each source files should include a license notice that designates the licensing terms for the respective file. 
 
+Note the mbed TLS is under the Apache 2.0 license.
+
 ### Prerequisite
 
 Before installing the SDK prepare the development environment.    
