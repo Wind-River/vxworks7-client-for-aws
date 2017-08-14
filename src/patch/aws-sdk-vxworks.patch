@@ -1357,10 +1357,10 @@ index 0000000..c2810a1
 +#endif //IOTSDKC_NETWORK_MBEDTLS_PLATFORM_H_H
 diff --git a/samples/vxworks/shadow_sample/Makefile b/samples/vxworks/shadow_sample/Makefile
 new file mode 100644
-index 0000000..20faf62
+index 0000000..c38dac1
 --- /dev/null
 +++ b/samples/vxworks/shadow_sample/Makefile
-@@ -0,0 +1,44 @@
+@@ -0,0 +1,53 @@
 +# Copyright (c) 2016, Wind River Systems, Inc.
 +#
 +# Redistribution and use in source and binary forms, with or without modification, are
@@ -1405,6 +1405,15 @@ index 0000000..20faf62
 +OBJS += shadow_sample.o
 +
 +include $(WIND_USR_MK)/rules.rtp.mk
++
++ifdef _WRS_CONFIG_ENDIAN_big
++EXTRA_DEFINE += -DREVERSED
++endif
++
++#
++# this code is 3rd party. Suppress all compiler warnings
++#
++CC_WARNINGS = $(CC_WARNINGS_NONE)
 diff --git a/samples/vxworks/shadow_sample/aws_iot_config.h b/samples/vxworks/shadow_sample/aws_iot_config.h
 new file mode 100644
 index 0000000..252c384
@@ -1789,10 +1798,10 @@ index 0000000..efc5693
 +}
 diff --git a/samples/vxworks/subscribe_publish_sample/Makefile b/samples/vxworks/subscribe_publish_sample/Makefile
 new file mode 100644
-index 0000000..867472f
+index 0000000..921afcf
 --- /dev/null
 +++ b/samples/vxworks/subscribe_publish_sample/Makefile
-@@ -0,0 +1,44 @@
+@@ -0,0 +1,53 @@
 +# Copyright (c) 2016, Wind River Systems, Inc.
 +#
 +# Redistribution and use in source and binary forms, with or without modification, are
@@ -1837,6 +1846,15 @@ index 0000000..867472f
 +OBJS += subscribe_publish_sample.o
 +
 +include $(WIND_USR_MK)/rules.rtp.mk
++
++ifdef _WRS_CONFIG_ENDIAN_big
++EXTRA_DEFINE += -DREVERSED
++endif
++
++#
++# this code is 3rd party. Suppress all compiler warnings
++#
++CC_WARNINGS = $(CC_WARNINGS_NONE)
 diff --git a/samples/vxworks/subscribe_publish_sample/aws_iot_config.h b/samples/vxworks/subscribe_publish_sample/aws_iot_config.h
 new file mode 100644
 index 0000000..252c384

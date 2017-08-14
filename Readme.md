@@ -103,6 +103,10 @@ Create the VxWorks 7 VxWorks source build (VSB) and VxWorks image project (VIP) 
     
         wrtool prj vip buildmacro set EXTRA_DEFINE "-DINET -DINET6 -Xdialect-c99 -Dinit_timer=init_timer_wr"
     
+**If the processor is big-endian, you should add the -DREVERSED option, for example:**
+    
+        wrtool prj vip buildmacro set EXTRA_DEFINE "-DINET -DINET6 -std=c99 -Dinit_timer=init_timer_wr -DREVERSED"
+
 5. Copy the certificates file to the RomFS and compile the VIP project.
         
         cd $WIND_WRTOOL_WORKSPACE
