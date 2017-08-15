@@ -29,7 +29,7 @@ Before installing the SDK prepare the development environment.
 
 1. Download the **VxWorks 7 AWS IoT SDK** layer from the following location:
 
-   https://github.com/Wind-River/vxworks7-aws-iot-sdk.git
+   https://github.com/Wind-River/vxworks7-client-for-aws.git.git
 
 2. Confirm the layer is present in your VxWorks 7 installation.
 3. Download the AWS IoT device SDK for C and the the mbed TLS. 
@@ -43,7 +43,7 @@ Before installing the SDK prepare the development environment.
         cd $WIND_BASE/pkgs/net/  
         mkdir cloud  
         cd cloud  
-        git clone https://github.com/Wind-River/vxworks7-aws-iot-sdk aws
+        git clone https://github.com/Wind-River/vxworks7-client-for-aws.git aws
 
 6. Run the setup script.
 
