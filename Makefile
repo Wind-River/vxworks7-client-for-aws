@@ -30,10 +30,11 @@ LIB_BASE_NAME = aws
 DOC_FILES =
 
 SHARED_PUBLIC_H_DIRS = src/iot-embeddedc/external_libs/mbedTLS/include
-SHARED_PUBLIC_H_DIRS += src/iot-embeddedc/external_libs/jsmn
-SHARED_PUBLIC_H_DIRS += src/iot-embeddedc/platform/vxworks/common
-SHARED_PUBLIC_H_DIRS += src/iot-embeddedc/platform/vxworks/mbedtls
 SHARED_PUBLIC_H_DIRS += src/iot-embeddedc/include
+
+SHARED_PUBLIC_H_FILES = src/iot-embeddedc/external_libs/jsmn/*.h
+SHARED_PUBLIC_H_FILES += src/iot-embeddedc/platform/vxworks/common/*.h
+SHARED_PUBLIC_H_FILES += src/iot-embeddedc/platform/vxworks/mbedtls/*.h
 
 KERNEL_PUBLIC_H_DIRS += src/iot-embeddedc/platform/vxworks/libc
 
@@ -51,6 +52,10 @@ POST_NOBUILD_CDFDIRS = cdf
 
 POSTBUILD_RTP_DIRS = src/iot-embeddedc/samples/vxworks/subscribe_publish_sample
 POSTBUILD_RTP_DIRS += src/iot-embeddedc/samples/vxworks/shadow_sample
+
+ifdef _WRS_CONFIG_ENDIAN_big
+ADDED_CFLAGS += -DREVERSED
+endif
 
 ifeq ($(SPACE), user)
 include $(WIND_USR_MK)/rules.layers.mk
