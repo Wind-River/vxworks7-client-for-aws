@@ -53,10 +53,6 @@ POST_NOBUILD_CDFDIRS = cdf
 POSTBUILD_RTP_DIRS = src/iot-embeddedc/samples/vxworks/subscribe_publish_sample
 POSTBUILD_RTP_DIRS += src/iot-embeddedc/samples/vxworks/shadow_sample
 
-ifdef _WRS_CONFIG_ENDIAN_big
-ADDED_CFLAGS += -DREVERSED
-endif
-
 ifeq ($(SPACE), user)
 include $(WIND_USR_MK)/rules.layers.mk
 else
