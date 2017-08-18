@@ -36,7 +36,7 @@ SHARED_PUBLIC_H_FILES = src/iot-embeddedc/external_libs/jsmn/*.h
 SHARED_PUBLIC_H_FILES += src/iot-embeddedc/platform/vxworks/common/*.h
 SHARED_PUBLIC_H_FILES += src/iot-embeddedc/platform/vxworks/mbedtls/*.h
 
-KERNEL_PUBLIC_H_DIRS += src/iot-embeddedc/platform/vxworks/libc
+KERNEL_PUBLIC_H_FILES += src/iot-embeddedc/platform/vxworks/libc/inttypes.h
 
 BUILD_DIRS = src/iot-embeddedc/external_libs/mbedTLS/library
 BUILD_DIRS += src/iot-embeddedc/external_libs/jsmn
