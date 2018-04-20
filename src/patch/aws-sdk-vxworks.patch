@@ -1357,11 +1357,11 @@ index 0000000..c2810a1
 +#endif //IOTSDKC_NETWORK_MBEDTLS_PLATFORM_H_H
 diff --git a/samples/vxworks/shadow_sample/Makefile b/samples/vxworks/shadow_sample/Makefile
 new file mode 100644
-index 0000000..c38dac1
+index 0000000..d2bf366
 --- /dev/null
 +++ b/samples/vxworks/shadow_sample/Makefile
 @@ -0,0 +1,53 @@
-+# Copyright (c) 2016, Wind River Systems, Inc.
++# Copyright (c) 2016, 2018 Wind River Systems, Inc.
 +#
 +# Redistribution and use in source and binary forms, with or without modification, are
 +# permitted provided that the following conditions are met:
@@ -1392,7 +1392,7 @@ index 0000000..c38dac1
 +
 +EXTRA_DEFINE += -Dinit_timer=init_timer_wr
 +
-+ADDED_LIBS += -laws
++ADDED_LIBS += -laws -lnet
 +
 +RTP_BASE_DIR = shadow_sample
 +
@@ -1478,7 +1478,7 @@ index 0000000..252c384
 +#endif /* SRC_SHADOW_IOT_SHADOW_CONFIG_H_ */
 diff --git a/samples/vxworks/shadow_sample/shadow_sample.c b/samples/vxworks/shadow_sample/shadow_sample.c
 new file mode 100644
-index 0000000..efc5693
+index 0000000..6f10662
 --- /dev/null
 +++ b/samples/vxworks/shadow_sample/shadow_sample.c
 @@ -0,0 +1,314 @@
@@ -1701,7 +1701,7 @@ index 0000000..efc5693
 +	IOT_DEBUG("clientKey %s", clientKey);
 +
 +    if(usrSetSysTime() != 0)
-+        return;
++        return -1;
 +
 +    parseInputArgsForConnectParams(argc, argv);
 +
@@ -1798,11 +1798,11 @@ index 0000000..efc5693
 +}
 diff --git a/samples/vxworks/subscribe_publish_sample/Makefile b/samples/vxworks/subscribe_publish_sample/Makefile
 new file mode 100644
-index 0000000..921afcf
+index 0000000..87c2c97
 --- /dev/null
 +++ b/samples/vxworks/subscribe_publish_sample/Makefile
 @@ -0,0 +1,53 @@
-+# Copyright (c) 2016, Wind River Systems, Inc.
++# Copyright (c) 2016, 2018 Wind River Systems, Inc.
 +#
 +# Redistribution and use in source and binary forms, with or without modification, are
 +# permitted provided that the following conditions are met:
@@ -1833,7 +1833,7 @@ index 0000000..921afcf
 +
 +EXTRA_DEFINE += -Dinit_timer=init_timer_wr
 +
-+ADDED_LIBS += -laws
++ADDED_LIBS += -laws -lnet
 +
 +RTP_BASE_DIR = subscribe_publish_sample
 +
@@ -1919,7 +1919,7 @@ index 0000000..252c384
 +#endif /* SRC_SHADOW_IOT_SHADOW_CONFIG_H_ */
 diff --git a/samples/vxworks/subscribe_publish_sample/subscribe_publish_sample.c b/samples/vxworks/subscribe_publish_sample/subscribe_publish_sample.c
 new file mode 100644
-index 0000000..6a7913f
+index 0000000..5f3a07f
 --- /dev/null
 +++ b/samples/vxworks/subscribe_publish_sample/subscribe_publish_sample.c
 @@ -0,0 +1,305 @@
@@ -2111,7 +2111,7 @@ index 0000000..6a7913f
 +	IoT_Publish_Message_Params paramsQOS1;
 +
 +    if(usrSetSysTime() != 0)
-+        return;
++        return -1;
 +
 +	parseInputArgsForConnectParams(argc, argv);
 +
