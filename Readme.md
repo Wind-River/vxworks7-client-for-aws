@@ -107,6 +107,10 @@ Create the VxWorks 7 VxWorks source build (VSB) and VxWorks image project (VIP) 
     
         wrtool prj vip buildmacro set EXTRA_DEFINE "-DINET -DINET6 -std=c99 -Dinit_timer=init_timer_wr -DREVERSED"
 
+**From version 1.0.0.2, building AWS with LLVM is supported. If use LLVM compiler, add the following:**
+    
+        wrtool prj vip buildmacro set EXTRA_DEFINE "-DINET -DINET6 -Dinit_timer=init_timer_wr"
+
 5. Copy the certificates file to the RomFS and compile the VIP project.
         
         cd $WIND_WRTOOL_WORKSPACE
