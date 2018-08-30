@@ -723,64 +723,6 @@ index 0000000..757483d
 +#endif
 +
 +#endif /* SRC_PROTOCOL_MQTT_AWS_IOT_EMBEDDED_CLIENT_WRAPPER_PLATFORM_LINUX_COMMON_TIMER_PLATFORM_H_ */
-diff --git a/platform/vxworks/libc/inttypes.h b/platform/vxworks/libc/inttypes.h
-new file mode 100644
-index 0000000..cbf2612
---- /dev/null
-+++ b/platform/vxworks/libc/inttypes.h
-@@ -0,0 +1,52 @@
-+/* inttypes.h standard header */
-+
-+/* Copyright (c) 2016, Wind River Systems, Inc.
-+ *
-+ * Redistribution and use in source and binary forms, with or without modification, are
-+ * permitted provided that the following conditions are met:
-+ *
-+ * 1) Redistributions of source code must retain the above copyright notice,
-+ * this list of conditions and the following disclaimer.
-+ *
-+ * 2) Redistributions in binary form must reproduce the above copyright notice,
-+ * this list of conditions and the following disclaimer in the documentation and/or
-+ * other materials provided with the distribution.
-+ *
-+ * 3) Neither the name of Wind River Systems nor the names of its contributors may be
-+ * used to endorse or promote products derived from this software without specific
-+ * prior written permission.
-+ *
-+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
-+ * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-+ */
-+
-+#ifndef _INTTYPES
-+#define _INTTYPES
-+
-+#include <stdint.h>
-+
-+#define PRIi8	"hhi"
-+#define PRIi16	"hi"
-+#define PRIi32	"li"
-+
-+#define PRIu8	"hhu"
-+#define PRIu16	"hu"
-+#define PRIu32	"lu"
-+
-+#define SCNi8	"hhi"
-+#define SCNi16	"hi"
-+#define SCNi32	"li"
-+
-+#define SCNu8   "hhu"
-+#define SCNu16	"hu"
-+#define SCNu32	"lu"
-+
-+#endif /* _INTTYPES */
 diff --git a/platform/vxworks/libc/stdbool.h b/platform/vxworks/libc/stdbool.h
 new file mode 100644
 index 0000000..2cccf86
