@@ -32,7 +32,7 @@ Layer AWS_IOT_SDK
     {
     SYNOPSIS        AWS IoT SDK 
     HELP            This provides the Amazon Web Services(AWS) IoT Embedded C device SDK
-    VERSION         1.0.0.3
+    VERSION         2.0.0.0
     VENDOR          Wind River
     FEATURE         NETWORKING
     VSB_REQUIRES
