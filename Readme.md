@@ -10,8 +10,8 @@
 This document provides a quick summary of how to build and run the **Amazon Web Services (AWS) Internet of Things (IoT)** device software development kit (SDK) for C that resides in VxWorks 7 on your device. The SDK is an embedded C client library for interacting with the AWS IoT platform. This client library is not provided in VxWorks 7 RPM packages or on the VxWorks 7 product DVDs. You need to manually install this library on VxWorks 7.
 
 Release note:
-    The version 1.0.0.x only work with VxWorks 7 SR0540 and earlier.
-    The version 2.0.0.0 only work with VxWorks 7 SR0600 and later.
+    The version 1.0.0.x only works with VxWorks 7 SR0540 and earlier releases.
+    The version 2.0.0.0 only works with VxWorks 7 SR0600 and later releases.
 
 ### Project License
 
